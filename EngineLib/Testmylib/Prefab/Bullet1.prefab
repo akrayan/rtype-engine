@@ -1,0 +1,5 @@
+Tag=WeponPlayer
+TransformObject>scale>x=0.3
+SpriteRenderer>texture=Ressources/bullet.png
+SBullet
+Collider

@@ -1,0 +1,9 @@
+Tag=player
+TransformObject>position>x=30
+TransformObject>position>y=500
+TransformObject>scale>x=0.5
+TransformObject>scale>y=0.5
+TransformObject>rotation=-90
+SpriteRenderer>texture=Ressources/playerThree.png
+SPlayer
+Collider

@@ -1,0 +1,4 @@
+Tag=Mob
+SpriteRenderer>texture=Ressources/ufo.png
+SMob
+Collider

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="INetwork">
+    <Position X="17" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACwAAAQAAAAEAAABAAAAAACAAAAQAAAAAAAgAAAAQ=</HashCode>
+      <FileName>C:\Users\ak-ra\OneDrive\Documents\cpp_rtype\network\INetwork.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetworkManager">
+    <Position X="13.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAEAAABAoEAABCgACRCBAAAAIAAAEBAAQAgAI=</HashCode>
+      <FileName>C:\Users\ak-ra\OneDrive\Documents\cpp_rtype\network\NetworkManager.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WNetwork">
+    <Position X="17" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCCwAAAQEAAAEAAABAAAAAQCAAAEQACAAgAggAAAAQ=</HashCode>
+      <FileName>C:\Users\ak-ra\OneDrive\Documents\cpp_rtype\network\WNetwork.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CERIAAAQQBAAAAAAAAIABAQiAAiCAAAAAIABAAAAQAA=</HashCode>
+      <FileName>Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BitArray">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAABAIAAAAAAAAAAQAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>BitArray.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAEAAAAQAAAAAAAAAQAAAEAABAABAkAAAAAgQ=</HashCode>
+      <FileName>Client.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Collider">
+    <Position X="0.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAABAAAAAAAAAAAAAAEAAACABQQAAAAACQAAAA=</HashCode>
+      <FileName>Collider.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventNetwork">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAYABAAAAAAAAAEAAQAAAACAAQAAAACAAAAAAAAAQAg=</HashCode>
+      <FileName>EventNetwork.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameManager">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAQAFAQAADKACEAAAwAAEBBMCAABQYgA=</HashCode>
+      <FileName>GameManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject">
+    <Position X="11.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAACAAAAAIAIAAAAAABAAgAAIEAAAAAAAAAAIABAA=</HashCode>
+      <FileName>GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IComponent">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAgAAAEAAAAgBAAEQAAAAAAAAAAA=</HashCode>
+      <FileName>IComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RessourceManager">
+    <Position X="15.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RessourceManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Room">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEAAAAAAAIAAAEADAAAAAiAIAEAEAoBIABAAAAAgA=</HashCode>
+      <FileName>Room.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scene">
+    <Position X="11.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABgAAAAAAAAAAAgAQAAAAAQEhAAAABAAAAAAACAAA=</HashCode>
+      <FileName>Scene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneLoader">
+    <Position X="10" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAQACIBCAYgAEEBAgAAAAAAAAFA=</HashCode>
+      <FileName>SceneLoader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Script">
+    <Position X="3" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAgAAAAAAAAAAAAAAAAAIAAAAAAAhAAA=</HashCode>
+      <FileName>Script.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoundManager">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAYAAAAAAAAAiAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>SoundManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpriteRenderer">
+    <Position X="5.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAYAAAAQUAAAAAAAAAAAQAAACAAAAAAAAEAAAAAIAA=</HashCode>
+      <FileName>SpriteRenderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextRenderer">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIAABAAAEAAAAAAMAIAQCAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>TextRenderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TransformObject">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAgACCAgAAAAgCAIAQCEAAAQggAIAAEAgAAAAA=</HashCode>
+      <FileName>TransformObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="PacketData">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABAAA=</HashCode>
+      <FileName>C:\Users\ak-ra\OneDrive\Documents\cpp_rtype\network\INetwork.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Packet">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAQAAAAAAA=</HashCode>
+      <FileName>C:\Users\ak-ra\OneDrive\Documents\cpp_rtype\network\INetwork.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Collision">
+    <Position X="0.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Collider.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="pointerOnParse" Collapsed="true">
+    <Position X="10" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SceneLoader.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="TypeConnect">
+    <Position X="15.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>C:\Users\ak-ra\OneDrive\Documents\cpp_rtype\network\INetwork.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

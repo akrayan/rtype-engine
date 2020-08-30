@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/network.dir/client.cpp.o CMakeFiles/network.dir/NetworkManager.cpp.o CMakeFiles/network.dir/server.cpp.o CMakeFiles/network.dir/WNetwork.cpp.o CMakeFiles/network.dir/UNetwork.cpp.o  -o network 

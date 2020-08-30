@@ -1,0 +1,7 @@
+Tag=Ground
+TransformObject>position>x=1024
+TransformObject>position>y=655
+SpriteRenderer>texture=Ressources/ground2.png
+Collider>ignore=Ground
+Collider>IsTrigger=true
+SGround

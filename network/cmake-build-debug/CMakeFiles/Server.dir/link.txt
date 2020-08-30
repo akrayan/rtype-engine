@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -Werror -std=c++11 -pthread -ldl -g   CMakeFiles/Server.dir/NetworkManager.cpp.o CMakeFiles/Server.dir/server.cpp.o CMakeFiles/Server.dir/UNetwork.cpp.o  -o Server 

@@ -1,0 +1,224 @@
+ 
+
+
+
+RFC                        afou_n, akkach_r, belugu_m, cheng_z, felten_n
+Category: Experimental                                           EPITECH
+
+
+                                 <RFC> 
+                    Network protocol for RType game
+
+
+Abstract
+
+   The RType game engine project aims at making 2D RType-like network
+   game development easier.
+
+
+Status of this Memo
+
+   This memo defines an experimental protocol for the developer
+   community. Discussion and suggestions for improvement are requested.
+   Distribution of this memo is unlimited.
+
+Copyright and License Notice
+
+   Copyright (c) 2018 RType and the persons identified as the document
+   authors. All rights reserved.
+
+
+
+Table of Contents
+
+   1  Introduction  . . . . . . . . . . . . . . . . . . . . . . . . .  2
+     1.1  Terminology . . . . . . . . . . . . . . . . . . . . . . . .  2
+   2  Network protocol  . . . . . . . . . . . . . . . . . . . . . . .  2
+     2.1 Server to client . . . . . . . . . . . . . . . . . . . . . .  2
+       2.1.1 Before joining a game room . . . . . . . . . . . . . . .  2
+       2.1.2 During a game  . . . . . . . . . . . . . . . . . . . . .  2
+     2.2 Client to server . . . . . . . . . . . . . . . . . . . . . .  3
+       2.2.1 Before joining a game room . . . . . . . . . . . . . . .  3
+       2.2.2 During a game  . . . . . . . . . . . . . . . . . . . . .  3
+   3  Security Considerations . . . . . . . . . . . . . . . . . . . .  3
+   4  IANA Considerations . . . . . . . . . . . . . . . . . . . . . .  3
+   5  References  . . . . . . . . . . . . . . . . . . . . . . . . . .  3
+     5.1  Normative References  . . . . . . . . . . . . . . . . . . .  3
+     5.2  Informative References  . . . . . . . . . . . . . . . . . .  3
+   Authors' Addresses . . . . . . . . . . . . . . . . . . . . . . . .  3
+
+
+
+
+ 
+
+
+rtype                         Experimental                      [Page 1]
+
+RFC                    Network protocol for RType           January 2018
+
+
+1  Introduction
+
+   The protocol defined in this document specifies the communication
+   between the game server, and the game client.
+
+1.1  Terminology
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+   document are to be interpreted as described in RFC 2119 [RFC2119].
+
+
+2  Network protocol
+
+2.1 Server to client
+
+2.1.1 Before joining a game room
+
+
+   Upon connection from the client, the server shall send a list of game
+   rooms to the newly connected client, using UDP. Each room information
+   must contain a command ID (one, on one byte), two-bytes signed room
+   ID, a one-byte player count, and a null byte terminated string of
+   ASCII characters corresponding to the room name followed by 4 null
+   byte terminated strings of ASCII characters corresponding to the
+   players names (1st is the blue payer, 2nd is the red player, 3rd is
+   the yellow player, 4th is the green player). After receiving the
+   client's choice, the server must send the command ID (two, on one
+   byte), and the chosen two-bytes ID. On error, the server must send
+   the -1 value as one byte, optionally followed by an error message.
+
+
+2.1.2 During a game
+
+   Undefined, to change. The server must send a continuous stream of
+   objects positions through a UDP connection. Each position shall be
+   composed of the command ID (one, on one byte), a two-bytes ID, two
+   two-bytes integers (object position, y then x), and a state (one
+   byte, 1= intact, 2 = damaged, 3 = on fire, 4 = exploding).
+   Optionally, in the event of a newly joined or disconnected client,
+   the server must send, over a TCP connection, an ASCII string
+   containing "[username] has joined.\n" or "[username] has quit.\n".
+
+
+
+
+
+
+ 
+
+
+rtype                         Experimental                      [Page 2]
+
+RFC                    Network protocol for RType           January 2018
+
+
+2.2 Client to server
+
+2.2.1 Before joining a game room
+
+   In order to choose a room, the client must send the command ID (one,
+   on one byte), the two-bytes ID of the room followed by the password
+   of the room (can be empty) and his username in a null byte terminated
+   string of ASCII characters. For creating a room, the client must send
+   the command ID (two, on one byte), the name of the room in a null
+   byte terminated string of ASCII characters followed by the password
+   of the room (can be empty) followed by his username.
+
+
+2.2.2 During a game
+
+   The client must send the actions of the player through the UDP
+   connection. Each action must be an unsigned byte:
+   1 = LEFT
+   2 = RIGHT
+   3 = UP
+   4 = DOWN
+   5 = SHOOT
+
+   Each action must be sent as long as the key is pressed, at least
+   every 10 milliseconds.
+
+3  Security Considerations
+
+   <Security considerations text>
+
+
+4  IANA Considerations
+
+   <IANA considerations text>
+
+
+5  References
+
+5.1  Normative References
+
+
+5.2  Informative References
+
+
+Authors' Addresses
+
+   AFOU Nacerdine nacerdine.afou@epitech.eu
+   AKKACHE Raihane raihane.akkache@epitech.eu
+ 
+
+
+rtype                         Experimental                      [Page 3]
+
+RFC                    Network protocol for RType           January 2018
+
+
+   BELUGUET Maxime maxime.beluguet@epitech.eu
+   CHENG Zita zita.cheng@epitech.eu
+   FELTEN Nicolas nicolas.felten@epitech.eu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rtype                         Experimental                      [Page 4]
